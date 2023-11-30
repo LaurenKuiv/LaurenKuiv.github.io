@@ -14,7 +14,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#2196F3">
-    <title>Rich Hildred</title>
+    <title>Lauren Kuivenhoven</title>
 
     <!-- CSS  -->
     <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
@@ -38,14 +38,13 @@
             <nav id="nav_f" class="default_color" role="navigation">
                 <div class="container">
                     <div class="nav-wrapper">
-                        <a href="#" id="logo-container" class="brand-logo">Rich Hildred</a>
+                        <a href="#" id="logo-container" class="brand-logo">Lauren Kuivenhoven</a>
                         <ul class="right hide-on-med-and-down">
-                            <li><a href="#intro">Service</a></li>
-                            <li><a href="#work">Work</a></li>
+                            <li><a href="#intro">Photos</a></li>
+                            <li><a href="#work">Videos</a></li>
                             <li><a href="#team">Team</a></li>
                             <li><a href="#contact">Contact</a></li>
-                            <li><a href="https://github.com/joashp/material-design-template"
-                                    target="_blank">Download</a></li>
+                           
                         </ul>
                         <ul id="nav-mobile" class="side-nav">
                             <li><a href="#intro">Service</a></li>
@@ -355,6 +354,8 @@
                 </div>
             </div>
         </section>
+        <img crossorigin="anonymous" src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=2210&quality=70">
+
     </main>
     <!--Footer-->
     <footer id="contact" class="page-footer default_color scrollspy">
@@ -427,12 +428,22 @@
                     class="white-text" href="http://materializecss.com/">materializecss</a>
             </div>
         </div>
+         &copy; Lauren <x-fullyear></x-fullyear> 
     </footer>
 
 
     <!--  Scripts-->
     <script src="min/plugin-min.js"></script>
     <script src="min/custom-min.js"></script>
+    <script>
+        class YearElement extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = new Date().getFullYear();
+    }
+}
+
+customElements.define("x-fullyear", YearElement);
+    </script>
 
 </body>
 
